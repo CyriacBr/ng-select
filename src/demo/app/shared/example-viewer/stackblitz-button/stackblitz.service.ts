@@ -27,7 +27,7 @@ const dependencies = {
     '@angular/platform-browser': angularVersion,
     '@angular/platform-browser-dynamic': angularVersion,
     '@angular/router': angularVersion,
-    '@ng-select/ng-select': '*',
+    '@cyriacbr/ng-select': '*',
     '@ng-select/ng-option-highlight': '*',
     '@ng-bootstrap/ng-bootstrap': '*',
     'core-js': '^2.4.1',

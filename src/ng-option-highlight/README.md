@@ -11,7 +11,7 @@ yarn add @ng-select/ng-option-highlight
 ```
 ### Step 2: Import the NgOptionHighlightModule:
 ```js
-import { NgSelectModule } from '@ng-select/ng-select';
+import { NgSelectModule } from '@cyriacbr/ng-select';
 import { NgOptionHighlightModule } from '@ng-select/ng-option-highlight';
 
 @NgModule({
