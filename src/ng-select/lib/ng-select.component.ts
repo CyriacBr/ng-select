@@ -38,7 +38,8 @@ import {
     NgLoadingTextTemplateDirective,
     NgMultiLabelTemplateDirective,
     NgTagTemplateDirective,
-    NgLoadingSpinnerTemplateDirective
+    NgLoadingSpinnerTemplateDirective,
+    NgPlaceholderTemplateDirective
 } from './ng-templates.directive';
 
 import { ConsoleService } from './console.service';
@@ -164,6 +165,7 @@ export class NgSelectComponent implements OnDestroy, OnChanges, AfterViewInit, C
     @ContentChild(NgMultiLabelTemplateDirective, { read: TemplateRef }) multiLabelTemplate: TemplateRef<any>;
     @ContentChild(NgHeaderTemplateDirective, { read: TemplateRef }) headerTemplate: TemplateRef<any>;
     @ContentChild(NgFooterTemplateDirective, { read: TemplateRef }) footerTemplate: TemplateRef<any>;
+    @ContentChild(NgPlaceholderTemplateDirective, { read: TemplateRef, static: false }) placeholderTemplate: TemplateRef<any>;
     @ContentChild(NgNotFoundTemplateDirective, { read: TemplateRef }) notFoundTemplate: TemplateRef<any>;
     @ContentChild(NgTypeToSearchTemplateDirective, { read: TemplateRef }) typeToSearchTemplate: TemplateRef<any>;
     @ContentChild(NgLoadingTextTemplateDirective, { read: TemplateRef }) loadingTextTemplate: TemplateRef<any>;
@@ -263,6 +265,10 @@ export class NgSelectComponent implements OnDestroy, OnChanges, AfterViewInit, C
     }
 
     ngAfterViewInit() {
+        if (this.placeholderTemplate) {
+            // TODO: check if needs check
+        }
+
         if (!this._itemsAreUsed) {
             this.escapeHTML = false;
             this._setItemsFromNgOptions();
