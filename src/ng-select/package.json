@@ -25,5 +25,13 @@
   },
   "dependencies": {
     "tslib": "^2.0.0"
-  }
+  },
+  "main": "bundles/cyriacbr-ng-select.umd.js",
+  "module": "fesm2015/cyriacbr-ng-select.js",
+  "es2015": "fesm2015/cyriacbr-ng-select.js",
+  "esm2015": "esm2015/cyriacbr-ng-select.js",
+  "fesm2015": "fesm2015/cyriacbr-ng-select.js",
+  "typings": "cyriacbr-ng-select.d.ts",
+  "metadata": "cyriacbr-ng-select.metadata.json",
+  "sideEffects": false
 }
