@@ -1,6 +1,6 @@
 {
   "repository": "CyriacBr/ng-select",
-  "version": "3.2.1",
+  "version": "3.3.0",
   "engines": {
     "node": ">= 6.9.0",
     "npm": ">= 3.0.0"
