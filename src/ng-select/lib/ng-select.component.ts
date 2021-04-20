@@ -89,6 +89,7 @@ export class NgSelectComponent implements OnDestroy, OnChanges, AfterViewInit, C
     @Input() appearance: string;
     @Input() dropdownPosition: DropdownPosition = 'auto';
     @Input() appendTo: string;
+    @Input() hidePanelWithNoItem: boolean;
     @Input() loading = false;
     @Input() closeOnSelect = true;
     @Input() hideSelected = false;

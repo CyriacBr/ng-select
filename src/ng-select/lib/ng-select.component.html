@@ -73,7 +73,7 @@
     </span>
 </div>
 
-<ng-dropdown-panel *ngIf="isOpen"
+<ng-dropdown-panel *ngIf="isOpen && (hidePanelWithNoItem ? itemsList.items.length > 0 : true)"
                    class="ng-dropdown-panel"
                    [virtualScroll]="virtualScroll"
                    [bufferAmount]="bufferAmount"

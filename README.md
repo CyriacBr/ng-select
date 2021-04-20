@@ -185,6 +185,7 @@ map: {
 | notFoundText | `string` | `No items found` | no | Set custom text when filter returns empty result |
 | placeholder | `string` | `-` | no | Placeholder text. |
 | [searchable] | `boolean` | `true` | no | Allow to search for value. Default `true`|
+| [hidePanelWithNoItem] | `boolean` | `false` | no | Hide dropdown panel if there is no items to display. This subsequently prevents no found text and other elements inside the panel from showing. Default `false`|
 | [readonly] | `boolean` | `false` | no | Set ng-select as readonly. Mostly used with reactive forms. |
 | [searchFn] | `(term: string, item: any) => boolean` | `null` | no | Allow to filter by custom search function |
 | [searchWhileComposing] | `boolean` | `true` | no | Whether items should be filtered while composition started |
